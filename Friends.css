@@ -1,0 +1,105 @@
+.title{
+	font-family: sans-serif;
+	color: #dc2d5e;
+	}
+	.container{
+		position: relative;
+		width: 200px;
+		height: 200px;
+		display: inline-block;
+		margin-right: 7%;
+		margin-left: 7%;
+		margin-top: 0;
+		margin-bottom: 1%;
+	}
+	.image{
+		display: block;
+		width: 200px;
+		height: 200px;
+	}
+	.overlay{
+		position: absolute;
+		transition: all .3s ease ;
+		opacity: 0;
+		background-color: rgb(0, 0, 0,0.8);
+	}
+	.container:hover .overlay{
+		opacity: 1;
+	}
+	.text{
+		color: white;
+		font-family: sans-serif;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		font-size: 20px;
+	}
+	.overlayLeft{
+		height: 100%;
+		width: 0;
+		top: 0;
+		left: 0;
+	}
+	.container:hover .overlayLeft{
+		width: 100%;
+	}
+	*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	}
+	body{
+		font-family: montserrat;
+	}
+	nav{
+		background: black;
+		height: 80px;
+		width: 100%;
+	}
+	label.logo{
+			color: white;
+			font-size: 35px;
+			line-height: 80px;
+			padding: 0 100px;
+			font-weight: bold;
+		}
+		nav ul{
+			float: right;
+			margin-right: 20px;
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+		}
+		nav ul li a{
+			color: white;
+			font-size: 17px;
+			padding: 7px 13px;
+			border-radius: 3px;
+			text-transform: uppercase;
+		}
+		a.active,a:hover{
+			background: #1b9ff;
+			transition: .5s;
+		}
+		h1{
+			margin-left: 33%;
+			margin-right: 33%;
+			margin-top: 5%;
+			margin-bottom: 5%;
+		}
+		h1{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 10vh;
+			width: 15%;
+			background-color: rgb(0, 0, 0,0.8);
+			font-size: 17px;
+			color: whitesmoke;
+			margin-left: 42%;
+		}
